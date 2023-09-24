@@ -11,5 +11,5 @@ def test_open_new_account_page():
         new_account_page.select_account_type()
     with allure.step("Выбираем идентификатор первого существующего аккаунта "):
         new_account_page.select_the_first_existing_account()
-    with allure.step("Нажимает кнопку создания нового аккаунта"):
+    with allure.step("Нажимаем кнопку создания нового аккаунта"):
         new_account_page.click_open_new_account_button()
