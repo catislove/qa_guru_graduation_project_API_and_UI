@@ -12,6 +12,7 @@ __pycache__/
 .env
 .pytest_cache
 .allure-results
+.tests/allure-results
 build/
 develop-eggs/
 dist/

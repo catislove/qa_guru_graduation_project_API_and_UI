@@ -7,10 +7,10 @@ from pages.button_click_page import ButtonClickPage
 button_click_page = ButtonClickPage()
 
 @allure.feature('Страница с кнопками')
-@allure.story('Первая кнопка')
 @allure.label('owner', 'Amalia')
 @allure.tag('web')
 @allure.severity(Severity.NORMAL)
+@allure.title('Первая кнопка')
 def test_first_button():
     with allure.step("Открываем страницу c кнопками"):
         button_click_page.open_button_click_page()
@@ -23,10 +23,10 @@ def test_first_button():
 
 
 @allure.feature('Страница с кнопками')
-@allure.story('Вторая кнопка')
 @allure.label('owner', 'Amalia')
 @allure.tag('web')
 @allure.severity(Severity.NORMAL)
+@allure.title('Вторая кнопка')
 def test_second_button():
     with allure.step("Открываем страницу c кнопками"):
         button_click_page.open_button_click_page()
@@ -39,10 +39,10 @@ def test_second_button():
 
 
 @allure.feature('Страница с кнопками')
-@allure.story('Третья кнопка')
 @allure.label('owner', 'Amalia')
 @allure.tag('web')
 @allure.severity(Severity.NORMAL)
+@allure.title('Третья кнопка')
 def test_third_button():
     with allure.step("Открываем страницу c кнопками"):
         button_click_page.open_button_click_page()

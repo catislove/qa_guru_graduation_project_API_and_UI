@@ -7,10 +7,10 @@ accordion_page = AccordionPage()
 
 
 @allure.feature('Страница с аккордеоном')
-@allure.story('Раздел Manual Testing')
 @allure.label('owner', 'Amalia')
 @allure.tag('web')
 @allure.severity(Severity.NORMAL)
+@allure.title('Открытие и проверка содержимого в разделе Manual Testing')
 def test_manual_accordion():
     with allure.step("Открываем страницу c аккордеоном"):
         accordion_page.open_accordion_page()
@@ -27,10 +27,10 @@ def test_manual_accordion():
 
 
 @allure.feature('Страница с аккордеоном')
-@allure.story('Раздел Cucumber BDD')
 @allure.label('owner', 'Amalia')
 @allure.tag('web')
 @allure.severity(Severity.NORMAL)
+@allure.title('Открытие и проверка содержимого в разделе Cucumber BDD')
 def test_сucumber_bdd_accordion():
     with allure.step("Открываем страницу c аккордеоном"):
         accordion_page.open_accordion_page()
@@ -46,10 +46,10 @@ def test_сucumber_bdd_accordion():
 
 
 @allure.feature('Страница с аккордеоном')
-@allure.story('Раздел Automation Testing')
 @allure.label('owner', 'Amalia')
 @allure.tag('web')
 @allure.severity(Severity.NORMAL)
+@allure.title('Открытие и проверка содержимого в разделе Automation Testing')
 def test_automation_accordion():
     with allure.step("Открываем страницу c аккордеоном"):
         accordion_page.open_accordion_page()
@@ -69,10 +69,10 @@ def test_automation_accordion():
 
 
 @allure.feature('Страница с аккордеоном')
-@allure.story('Раздел Keep Clicking')
 @allure.label('owner', 'Amalia')
 @allure.tag('web')
 @allure.severity(Severity.NORMAL)
+@allure.title('Открытие и проверка содержимого в разделе Keep Clicking')
 def test_keep_clicking_accordion():
     with allure.step("Открываем страницу c аккордеоном"):
         accordion_page.open_accordion_page()

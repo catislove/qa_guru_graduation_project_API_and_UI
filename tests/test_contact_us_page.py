@@ -5,10 +5,10 @@ from pages.contact_us_page import ContactUsPage
 
 
 @allure.feature('Страница с обратной связью')
-@allure.story('Заполнение и сохранение формы с обратной связью')
 @allure.label('owner', 'Amalia')
 @allure.tag('web')
 @allure.severity(Severity.NORMAL)
+@allure.title('Заполнение и сохранение формы с обратной связью')
 def test_contact_us_page():
     contact_us_page = ContactUsPage()
     with allure.step("Открываем страницу обратной связи"):
