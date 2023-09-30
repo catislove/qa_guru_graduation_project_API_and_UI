@@ -1,0 +1,3 @@
+{'level': 'SEVERE', 'message': "https://webdriveruniversity.com/Click-Buttons/js/script.js 0:0 Uncaught SyntaxError: Unexpected token '<'", 'source': 'javascript', 'timestamp': 1696084569288}
+{'level': 'SEVERE', 'message': 'https://webdriveruniversity.com/favicon.ico - Failed to load resource: the server responded with a status of 404 ()', 'source': 'network', 'timestamp': 1696084569513}
+{'level': 'SEVERE', 'message': 'https://webdriveruniversity.com/Click-Buttons/js/bootstrap.min.js 5:22539 Uncaught Error: Modal is transitioning', 'source': 'javascript', 'timestamp': 1696084570179}

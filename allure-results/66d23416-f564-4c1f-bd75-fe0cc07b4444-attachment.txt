@@ -1,0 +1,2 @@
+{'level': 'SEVERE', 'message': "https://webdriveruniversity.com/Click-Buttons/js/script.js 0:0 Uncaught SyntaxError: Unexpected token '<'", 'source': 'javascript', 'timestamp': 1696084597503}
+{'level': 'SEVERE', 'message': 'https://webdriveruniversity.com/favicon.ico - Failed to load resource: the server responded with a status of 404 ()', 'source': 'network', 'timestamp': 1696084597789}
