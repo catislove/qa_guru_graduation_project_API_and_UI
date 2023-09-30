@@ -1,12 +1,15 @@
 import os
-
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selene import browser
 from dotenv import load_dotenv
 from utils import attach
-import fixture.session
+import tests
+
+
+def path(file_name):
+    return os.path.abspath(os.path.join(os.path.dirname(tests.__file__), f'resources/{file_name}'))
 
 
 @pytest.fixture(scope='session', autouse=True)
@@ -15,10 +18,9 @@ def load_env():
 
 @pytest.fixture(scope='function', autouse=True)
 def browser_management():
-    browser.config.base_url = 'https://parabank.parasoft.com'
+    browser.config.base_url = 'https://webdriveruniversity.com'
     browser.config.window_width = 1920
     browser.config.window_height = 1080
-    fixture.session.login()
     options = Options()
     selenoid_capabilities = {
         "browserName": "chrome",
@@ -40,7 +42,6 @@ def browser_management():
     browser.config.driver = driver
 
     yield browser
-    fixture.session.logout()
 
     attach.add_html(browser)
     attach.add_screenshot(browser)
